@@ -10,6 +10,7 @@ pylint = "*"
 [packages]
 requests = "*"
 pandas = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
