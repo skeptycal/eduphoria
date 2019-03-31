@@ -6,11 +6,14 @@ verify_ssl = true
 [dev-packages]
 pytest = "*"
 pylint = "*"
+setuptools = "*"
+django = "*"
 
 [packages]
 requests = "*"
 pandas = "*"
 numpy = "*"
+markdown = "*"
 
 [requires]
 python_version = "3.7"
