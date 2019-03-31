@@ -8,6 +8,7 @@ pytest = "*"
 pylint = "*"
 setuptools = "*"
 django = "*"
+yapf = "*"
 
 [packages]
 requests = "*"
