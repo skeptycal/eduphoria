@@ -79,8 +79,17 @@ if __name__ == "__main__":
     # ! json test
     # response = get_test('https://jsonplaceholder.typicode.com/todos/1', BLUE)
 
-    eduphoria_page: AnyStr = 'https://victoria.schoolobjects.com/eduphoria_webcontrols/Login.aspx?ReturnUrl=%2feduphoria_webcontrols%2fApplications.aspx'
+    url: str = 'https://victoria.schoolobjects.com/aware/Analysis/TEAnalysis/ViewListGenerator.aspx?all=3449'
 
-    response = get_test(eduphoria_page, BLUE)
+    headers: dict = {"content-type": "text"}
+
+    r = requests.get(url, headers)
+
+    print("Response Status Code: ", r.status_code)
+    print("Apparent Encoding: ", r.apparent_encoding)
+    print("Text: ", r.text)
+
+    # response = get_test(eduphoria_page, BLUE)
 
     # response = reqs.get(eduphoria_page)
+    # r=requests.get("http://www.example.com/", headers={"content-type":"text"})
