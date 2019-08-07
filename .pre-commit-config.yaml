@@ -1,4 +1,3 @@
-
 #####################################################################
 #     pc.sh : pre-commit automation for macOS version 0.5.0
 
@@ -19,30 +18,29 @@
 # in order to maintain the correct, current versioning from git (master sha)
 
 default_language_version:
-    python: python3.7
+  python: python3.7
 exclude: "^$"
 fail_fast: false
 repos:
--   repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v2.1.0
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
     hooks:
-    -   id: check-added-large-files
-    -   id: check-byte-order-marker
-    -   id: check-docstring-first
-    -   id: check-case-conflict
-    -   id: check-json
-    -   id: check-merge-conflict
-    -   id: check-symlinks
-    -   id: check-yaml
-    -   id: detect-aws-credentials
-    -   id: detect-private-key
-    -   id: end-of-file-fixer
-    -   id: flake8
-    -   id: pretty-format-json
-    -   id: requirements-txt-fixer
-    -   id: trailing-whitespace
--   repo: git://github.com/pre-commit/mirrors-pylint
+      - id: check-added-large-files
+      - id: check-byte-order-marker
+      - id: check-docstring-first
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-yaml
+      # -   id: detect-aws-credentials
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: flake8
+      - id: pretty-format-json
+      - id: requirements-txt-fixer
+      - id: trailing-whitespace
+  - repo: git://github.com/pre-commit/mirrors-pylint
     rev: v2.3.1
     hooks:
-    -   id: pylint
-
+      - id: pylint
